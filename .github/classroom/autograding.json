@@ -1,14 +1,14 @@
 {
   "tests": [
     {
-      "name": "Test acceptance criteria",
+      "name": "React Test",
       "setup": "npm install",
       "run": "npm test",
       "input": "",
       "output": "",
       "comparison": "included",
-      "timeout": 10,
-      "points": 10
+      "timeout": 15,
+      "points": null
     }
   ]
 }
