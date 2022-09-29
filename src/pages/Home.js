@@ -2,7 +2,7 @@ import data from "../models/example-data.json";
 import Product from "../Components/Product";
 import { useState } from "react";
 
-function HomePage() {
+function HomePage(props) {
   const [searchTerm, setSearchTerm] = useState("Type Here");
 
   return (
@@ -16,6 +16,7 @@ function HomePage() {
             name={individualItem.trackName}
             artist={individualItem.artistName}
             price={individualItem.trackPrice}
+            addItemToBasket={props.addItemToBasket}
           />
         );
       })}
