@@ -2,15 +2,15 @@
 //   name: "Biff and Chip",
 // };
 
-function Book(props) {
+function Product(props) {
   return (
     <>
       <h1>{props.name}</h1>
-      <p>{props.author}</p>
+      <p>{props.artist}</p>
       <p>{props.price}</p>
       <img src="" alt="pic details" />
     </>
   );
 }
 
-export default Book;
+export default Product;

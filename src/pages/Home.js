@@ -1,4 +1,4 @@
-import Book from "../Components/Book";
+import Product from "../Components/Product";
 
 function HomePage() {
   const names = [
@@ -16,8 +16,14 @@ function HomePage() {
 
   return (
     <div>
-      {names.map((singleBook) => {
-          return <Book name={singleBook.title} author={singleBook.author} price={singleBook.price} />;
+      {names.map((individualItem) => {
+        return (
+          <Product
+            name={individualItem.title}
+            artist={individualItem.author}
+            price={individualItem.price}
+          />
+        );
       })}
     </div>
   );
