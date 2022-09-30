@@ -4,7 +4,7 @@ import BasketPage from "./pages/Basket";
 import AboutPage from "./pages/About";
 import "./App.css";
 
-
+// need to add code that will copy details from the product to the basket page without removing it once we click the add to basket link.
 function App() {
   function addToBasket() {
     console.log("added to Basket");
