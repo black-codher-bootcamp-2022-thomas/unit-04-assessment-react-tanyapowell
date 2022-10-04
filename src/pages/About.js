@@ -1,5 +1,9 @@
+import Header from "../Components/Header";
+
 function AboutPage() {
-    return <div>About Page</div>
+    return (
+        <Header title={'About Us'}/>
+    )
 }
 
 export default AboutPage;
