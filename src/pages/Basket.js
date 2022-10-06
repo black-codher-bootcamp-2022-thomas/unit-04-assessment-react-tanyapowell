@@ -14,6 +14,7 @@ function BasketPage(props) {
             price={individualItem.trackPrice}
             addItemToBasket={props.addItemToBasket}
             trackId={individualItem.trackId}
+            page="basket"
           />
         );
       })}

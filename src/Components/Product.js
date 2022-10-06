@@ -7,9 +7,12 @@ function Product(props) {
       <p>{props.artist}</p>
       <p>{props.price}</p>
       <img src="" alt="pic details" />
-      <button onClick={() => props.addItemToBasket(props.trackId)}>
-        Add to basket
-      </button>
+      {props.page === "homepage" && (
+        <button onClick={() => props.addItemToBasket(props.trackId)}>
+          Add to basket
+        </button>
+      )}
+      {props.page === "basket" && <button>Remove</button>}
     </>
   );
 }

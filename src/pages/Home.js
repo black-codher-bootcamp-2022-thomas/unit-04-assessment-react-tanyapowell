@@ -23,6 +23,7 @@ function HomePage(props) {
             price={individualItem.trackPrice}
             addItemToBasket={props.addItemToBasket}
             trackId={individualItem.trackId}
+            page="homepage"
           />
         );
       })}
