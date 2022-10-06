@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   function addToBasket(itemId) {
     const findProductID = exampledata.filter( item => item.trackId === itemId);
-    console.log(findProductID);
+    return findProductID
   }
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage data={exampledata} addItemToBasket={addToBasket}/>} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="basket" element={<BasketPage />} />
+          <Route path="basket" element={<BasketPage basketItems={}/>} />
         </Routes>
       </Router>
     </>
