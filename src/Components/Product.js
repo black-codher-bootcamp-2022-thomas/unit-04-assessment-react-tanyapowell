@@ -8,6 +8,7 @@ function Product(props) {
       <h1>{props.name}</h1>
       <p>{props.artist}</p>
       <p>{props.price}</p>
+      <p>{props.album}</p>
       <img src="" alt="pic details" />
     </>
   );

@@ -1,25 +1,20 @@
-import data from "../models/example-data.json";
-import Product from "../Components/Product";
+import products from "../models/example-data.json";
 import { useState } from "react";
+import ProductList from "../Components/ProductList";
+import Header from "../Components/Header";
 
 function HomePage() {
-  const [searchTerm, setSearchTerm] = useState("Type Here");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  return (
+  return (<>
+    <Header title={'Home Page'}/>
     <div>
       <input onChange={(event) => setSearchTerm(event.target.value)} value={searchTerm} />
       <p>{`The person typed: ${searchTerm}`}</p>
-      {data.map((individualItem) => {
-        return (
-          <Product
-            key={individualItem.trackId}
-            name={individualItem.trackName}
-            artist={individualItem.artistName}
-            price={individualItem.trackPrice}
-          />
-        );
-      })}
+     <ProductList 
+     products={products}/>
     </div>
+    </>
   );
 }
 
