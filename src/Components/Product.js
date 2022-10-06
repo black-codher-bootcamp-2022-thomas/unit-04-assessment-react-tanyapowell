@@ -1,6 +1,4 @@
-// const props = {
-//   name: "Biff and Chip",
-// };
+// import React, { useState, useEffect } from 'react';
 
 function Product(props) {
   return (
@@ -9,6 +7,9 @@ function Product(props) {
       <p>{props.artist}</p>
       <p>{props.price}</p>
       <img src="" alt="pic details" />
+      <button onClick={() => props.addItemToBasket(props.trackId)}>
+        Add to basket
+      </button>
     </>
   );
 }
