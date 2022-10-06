@@ -1,11 +1,10 @@
 import products from "../models/example-data.json";
-import Product from "../Components/Product";
 import { useState } from "react";
 import ProductList from "../Components/ProductList";
 import Header from "../Components/Header";
 
 function HomePage() {
-  const [searchTerm, setSearchTerm] = useState("Type Here");
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (<>
     <Header title={'Home Page'}/>
@@ -13,7 +12,7 @@ function HomePage() {
       <input onChange={(event) => setSearchTerm(event.target.value)} value={searchTerm} />
       <p>{`The person typed: ${searchTerm}`}</p>
      <ProductList 
-     items={products}/>
+     products={products}/>
     </div>
     </>
   );

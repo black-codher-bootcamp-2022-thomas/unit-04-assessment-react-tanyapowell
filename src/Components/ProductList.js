@@ -1,7 +1,7 @@
 import Product from "./Product";
 
 function ProductList(props) {
-    return ( <>{props.items.map((individualItem) => {
+    return ( <>{props.products.slice(0,5).map((individualItem) => {
         return (
           <Product
             key={individualItem.trackId}

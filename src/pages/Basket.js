@@ -4,10 +4,11 @@ import Header from "../Components/Header";
 
 function BasketPage() {
     return (
-        <> <Header title={' Basket'}/>
-        
-    <ProductList 
-        items={products}/> </>
+        <> <
+            Header title={'Basket'}/>
+        <ProductList 
+        products={products}/>
+         </>
     )
 }
 
