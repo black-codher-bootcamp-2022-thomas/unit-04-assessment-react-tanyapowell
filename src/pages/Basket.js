@@ -1,5 +1,11 @@
-function BasketPage() {
-    return <div>{props.data.map((individualItem) => {
+import Header from "../Components/Header";
+import Product from "../Components/Product";
+
+function BasketPage(props) {
+  return (
+    <div>
+      <Header title="basket" />
+      {props.basketItemsData.map((individualItem) => {
         return (
           <Product
             key={individualItem.trackId}
@@ -11,8 +17,8 @@ function BasketPage() {
           />
         );
       })}
-      </div>
+    </div>
+  );
 }
 
 export default BasketPage;
-
