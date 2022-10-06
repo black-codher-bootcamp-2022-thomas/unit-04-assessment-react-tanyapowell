@@ -16,6 +16,7 @@ function HomePage(props) {
             artist={individualItem.artistName}
             price={individualItem.trackPrice}
             addItemToBasket={props.addItemToBasket}
+            trackId={individualItem.trackId}
           />
         );
       })}

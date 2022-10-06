@@ -6,12 +6,13 @@ import AboutPage from "./pages/About";
 import "./App.css";
 
 // need to add code that will copy details from the product to the basket page without removing it once we click the add to basket link.
-function App() {
-  function addToBasket(itemid) {
-//Step 1: Get id of product
-//Step 2: Search through all of the example data to find the product id of step 1
+    
 //Step 3: Pass that to the basket     
-    console.log(itemid);
+
+function App() {
+  function addToBasket(itemId) {
+    const findProductID = exampledata.filter( item => item.trackId === itemId);
+    console.log(findProductID);
   }
   return (
     <>

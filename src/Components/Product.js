@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
 function Product(props) {
   return (
@@ -7,7 +7,7 @@ function Product(props) {
       <p>{props.artist}</p>
       <p>{props.price}</p>
       <img src="" alt="pic details" />
-      <button onClick={() => props.addItemToBasket(props.name)}>Add to basket</button>
+      <button onClick={() => props.addItemToBasket(props.trackId)}>Add to basket</button>
 
     </>
   );
