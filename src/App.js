@@ -15,7 +15,8 @@ function App() {
 
   function addToBasket(itemId) {
     const findProductID = exampledata.filter((item) => item.trackId === itemId);
-    setBasketItems(findProductID);
+    const updatedBasketItems = [findProductID[0], ...basketItems];
+    setBasketItems(updatedBasketItems);
   }
 
   console.log(basketItems);
